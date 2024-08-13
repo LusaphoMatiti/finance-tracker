@@ -1,0 +1,128 @@
+.myExpenses {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.expenses-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.expenses-info input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  max-width: 12rem;
+}
+
+.expenses-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expense-description {
+  flex: 2;
+  color: #555;
+}
+
+.expense-amount {
+  flex: 1;
+  text-align: right;
+  color: #2c3e50;
+}
+
+.expense-date {
+  flex: 1;
+  text-align: right;
+  color: #7f8c8d;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.clear-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.clear-btn:hover {
+  background-color: #2980b9;
+}
+
+@media screen and (max-width: 768px) {
+  .myExpenses {
+    padding: 15px;
+  }
+  .expenses-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .expenses-info input {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .expense-item {
+    padding: 8px;
+  }
+  .delete-btn,
+  .clear-btn {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .myExpenses {
+    padding: 10px;
+  }
+  .expenses-info input {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
