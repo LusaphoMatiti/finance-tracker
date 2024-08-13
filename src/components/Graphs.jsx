@@ -7,7 +7,6 @@ import {
   BarElement,
   Tooltip,
   Legend,
-  plugins,
 } from "chart.js";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
