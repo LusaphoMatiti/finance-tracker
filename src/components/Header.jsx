@@ -1,4 +1,4 @@
-import logo from "../images/budget.svg";
+import logo from "../images/finance.png";
 import { pageLinks } from "../data";
 import React, { useState } from "react";
 import "../style/Header.css";
@@ -17,7 +17,7 @@ const Header = () => {
           <div className="nav-header">
             <div className="title-logo">
               <h1>Finance Tracker</h1>
-              <img src={logo} className="nav-logo" alt="finance-tracker" />
+              <img src={logo} className="logo" alt="finance-tracker" />
             </div>
 
             <button
